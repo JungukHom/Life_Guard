@@ -124,23 +124,25 @@ public class GameController : MonoBehaviour
 
     public IEnumerator CheckVRButton()
     {
-        SteamVR_Action_Boolean trigger = SteamVR_Actions.default_GrabPinch;
-        SteamVR_Action_Boolean trackpad = SteamVR_Actions.default_Teleport;
+        // TODO : 주석 풀기
+        yield return null;
+        //SteamVR_Action_Boolean trigger = SteamVR_Actions.default_GrabPinch;
+        //SteamVR_Action_Boolean trackpad = SteamVR_Actions.default_Teleport;
 
-        while (true)
-        {
-            if (trigger.GetLastStateDown(SteamVR_Input_Sources.Any))
-            {
-                Action();
-            }
+        //while (true)
+        //{
+        //    if (trigger.GetLastStateDown(SteamVR_Input_Sources.Any))
+        //    {
+        //        Action();
+        //    }
 
-            if (trackpad.GetLastStateDown(SteamVR_Input_Sources.Any))
-            {
-                diaLogHolder.Replay();
-            }
+        //    if (trackpad.GetLastStateDown(SteamVR_Input_Sources.Any))
+        //    {
+        //        diaLogHolder.Replay();
+        //    }
 
-            yield return null;
-        }
+        //    yield return null;
+        //}
     }
 
 }
