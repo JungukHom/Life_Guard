@@ -168,6 +168,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011283016324}
   - component: {fileID: 205000013574133960}
+  - component: {fileID: 7739497146845006875}
+  - component: {fileID: 8010016200694972460}
   m_Layer: 0
   m_Name: janitor_cart-1
   m_TagString: Untagged
@@ -219,6 +221,35 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23000013038058960}
   m_Enabled: 1
+--- !u!65 &7739497146845006875
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011419429168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.36, y: 1.15, z: 0.58}
+  m_Center: {x: 0, y: 0.58, z: 0}
+--- !u!54 &8010016200694972460
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011419429168}
+  serializedVersion: 2
+  m_Mass: 0.6
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1000012965554824
 GameObject:
   m_ObjectHideFlags: 0
