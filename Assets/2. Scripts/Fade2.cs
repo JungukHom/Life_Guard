@@ -10,7 +10,7 @@ using Valve.VR;
 
 // Alias
 
-public class Fade : MonoBehaviour
+public class Fade2 : MonoBehaviour
 {
     public float fadeTime = 1f;
 
