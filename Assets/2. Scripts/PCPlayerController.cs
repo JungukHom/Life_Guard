@@ -37,7 +37,7 @@ public class PCPlayerController : MonoBehaviour
         moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         tr.rotation = Quaternion.Euler(0f , cameraTr.eulerAngles.y, 0f);
         tr.Translate(moveDir * Time.deltaTime * speed, Space.Self);
-        rigidbody.velocity = Vector3.zero;
+        //rigidbody.velocity = Vector3.zero; // TODO change velocity
     }
 
    
