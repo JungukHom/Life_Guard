@@ -44,15 +44,8 @@
 
         private void SetListeners()
         {
-            btn_play.onClick.AddListener(() => { OnPlayButtonClicked(); });
             btn_previous.onClick.AddListener(() => { OnMoveButtonClicked(false); });
             btn_next.onClick.AddListener(() => { OnMoveButtonClicked(true); });
-        }
-
-        private void OnPlayButtonClicked()
-        {
-            AudioClip clip = Resources.Load(voiceDataList[currentIndex].GetVoiceFilePath()) as AudioClip;
-            Sound.GetOrCreate().PlayVoiceSound(clip);
         }
 
         private void OnMoveButtonClicked(bool isNext)
@@ -84,21 +77,10 @@
             CustomList<CSVVoiceDataHolder> wordList;
             CustomList<CSVVoiceDataHolder> sentenceList;
 
-            if (PlayingData.isHotel)
-            {
-                wordList = CustomList<CSVVoiceDataHolder>.Create(container.GetData(ELocation.Hotel,
+            wordList = CustomList<CSVVoiceDataHolder>.Create(container.GetData(ELocation.Hotel,
                     (EHotelLesson)PlayingData.selectedLessonIndex, EVoiceType.Word));
-                sentenceList = CustomList<CSVVoiceDataHolder>.Create(container.GetData(ELocation.Hotel,
-                    (EHotelLesson)PlayingData.selectedLessonIndex, EVoiceType.Conversation));
-            }
-            else
-            {
-                wordList = CustomList<CSVVoiceDataHolder>.Create(container.GetData(ELocation.Airport,
-                    (EAirportLesson)PlayingData.selectedLessonIndex, EVoiceType.Word));
-                sentenceList = CustomList<CSVVoiceDataHolder>.Create(container.GetData(ELocation.Airport,
-                    (EAirportLesson)PlayingData.selectedLessonIndex, EVoiceType.Conversation));
-            }
-            
+            sentenceList = CustomList<CSVVoiceDataHolder>.Create(container.GetData(ELocation.Hotel,
+                (EHotelLesson)PlayingData.selectedLessonIndex, EVoiceType.Conversation));
 
             voiceDataList = wordList + sentenceList;
         }
@@ -108,8 +90,6 @@
             txt_chinese.text = voiceDataList[currentIndex].chinese;
             txt_pinyin.text = voiceDataList[currentIndex].pinyin;
             txt_korean.text = voiceDataList[currentIndex].korean;
-
-            OnPlayButtonClicked();
         }
     }
 }

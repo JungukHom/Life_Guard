@@ -34,14 +34,7 @@
         {
             Screen.FadeOut(() =>
             {
-                if (isHotel)
-                {
-                    SceneLoader.LoadScene(SceneName._02_Menu_Hotel);
-                }
-                else
-                {
-                    SceneLoader.LoadScene(SceneName._02_Menu_Airport);
-                }
+                SceneLoader.LoadScene(SceneName._02_Menu);
             });
         }
 

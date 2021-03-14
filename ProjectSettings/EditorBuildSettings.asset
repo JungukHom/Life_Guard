@@ -5,15 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/00.Splash.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/01.Title.unity
     guid: 2144f30609473124a9a0b2a57108ae38
+  - enabled: 1
+    path: Assets/Scenes/02.Menu.unity
+    guid: 51414c7da8d55f848b868bf1942a1dc9
   - enabled: 1
     path: Assets/Scenes/03.Study_Youtube.unity
     guid: b20f5e7eb4003944fb705b2d6a4a4144
@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/06.Quiz.unity
     guid: 17a431e2ade6dbd40aa14d0dcdcafe5d
-  - enabled: 1
-    path: Assets/Scenes/Game/02.CPR.unity
-    guid: f76f628c4b723bd43a1392fdd6775901
   - enabled: 1
     path: Assets/Scenes/07.Answer.unity
     guid: 41c075064f93e104da918464189fdeee

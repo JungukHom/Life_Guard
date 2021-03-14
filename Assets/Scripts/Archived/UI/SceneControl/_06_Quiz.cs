@@ -131,16 +131,8 @@
 
         private void LoadQuizData()
         {
-            if (PlayingData.isHotel)
-            {
-                listOX = CSVQuizOXDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
-                listMC = CSVQuizMCDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
-            }
-            else
-            {
-                listOX = CSVQuizOXDataContainer.GetOrCreateInstance().GetData(ELocation.Airport, (EAirportLesson)PlayingData.selectedLessonIndex);
-                listMC = CSVQuizMCDataContainer.GetOrCreateInstance().GetData(ELocation.Airport, (EAirportLesson)PlayingData.selectedLessonIndex);
-            }
+            listOX = CSVQuizOXDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
+            listMC = CSVQuizMCDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
         }
 
         private void InvalidateWithOXData()

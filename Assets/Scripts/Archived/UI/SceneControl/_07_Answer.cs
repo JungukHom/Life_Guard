@@ -42,17 +42,8 @@
 
         private void LoadAnswerData()
         {
-            if (PlayingData.isHotel)
-            {
-                holderOX = CSVQuizOXDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
-                holderMC = CSVQuizMCDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
-            }
-            else
-            {
-                holderOX = CSVQuizOXDataContainer.GetOrCreateInstance().GetData(ELocation.Airport, (EAirportLesson)PlayingData.selectedLessonIndex);
-                holderMC = CSVQuizMCDataContainer.GetOrCreateInstance().GetData(ELocation.Airport, (EAirportLesson)PlayingData.selectedLessonIndex);
-            }
-            
+            holderOX = CSVQuizOXDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
+            holderMC = CSVQuizMCDataContainer.GetOrCreateInstance().GetData(ELocation.Hotel, (EHotelLesson)PlayingData.selectedLessonIndex);
         }
 
         private void RegisterAnswerData()
@@ -101,7 +92,7 @@
         {
             Screen.FadeOut(() =>
             {
-                SceneLoader.LoadScene(SceneName._02_Menu_Hotel);
+                SceneLoader.LoadScene(SceneName._02_Menu);
             });
         }
     }
