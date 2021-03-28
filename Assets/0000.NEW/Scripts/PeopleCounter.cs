@@ -13,6 +13,7 @@ public class PeopleCounter : MonoBehaviour
 {
     public FadeInOut fadeInOut;
     public GameObject player;
+    public GameObject playerCamera;
     public GameObject npcs;
     public Text text;
 
@@ -24,7 +25,7 @@ public class PeopleCounter : MonoBehaviour
     {
         Debug.Log($"add count : {count}");
         count++;
-        if (count >= 3)
+        if (count >= 4)
         {
             EventCount.currentIndex++;
             PlayerControl.isMoveable = false;
@@ -35,6 +36,7 @@ public class PeopleCounter : MonoBehaviour
                 // player 이동
                 player.transform.position = new Vector3(7, 1, -4);
                 player.transform.rotation = Quaternion.identity;
+                playerCamera.transform.eulerAngles = Vector3.zero;
 
                 // npc 제거
                 npcs.SetActive(false);
@@ -52,7 +54,7 @@ public class PeopleCounter : MonoBehaviour
                         PlayerControl.isMoveable = true;
                         SceneLoader.LoadScene(SceneName._06_Quiz);
                     });
-                    
+
                 };
 
                 // fade in

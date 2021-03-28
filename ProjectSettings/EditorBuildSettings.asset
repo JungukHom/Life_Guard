@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/0000.NEW/Scenes/04.Study_Read.unity
     guid: ae5797d888c589142a8dbdfbae8845d0
   - enabled: 1
+    path: Assets/0000.NEW/Scenes/05.Lesson_01.unity
+    guid: d57fb9895d5316c47a7d173917a30795
+  - enabled: 1
+    path: Assets/0000.NEW/Scenes/05.Lesson_02.unity
+    guid: 49eaa7d7a317b5f4784c828712ff8a68
+  - enabled: 1
     path: Assets/0000.NEW/Scenes/06.Quiz.unity
     guid: 17a431e2ade6dbd40aa14d0dcdcafe5d
   - enabled: 1

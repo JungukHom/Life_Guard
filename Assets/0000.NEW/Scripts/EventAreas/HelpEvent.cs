@@ -12,7 +12,6 @@ public class HelpEvent : EventArea
 
     private void Awake()
     {
-        Debug.Log("awake");
         triggeredAction = () =>
         {
             counter.AddCount();
