@@ -31,7 +31,7 @@
         public Button btn_choice_04;
 
 
-        private int currentIndex = 0;
+        [SerializeField] private int currentIndex = 0;
 
         private List<CSVQuizOXDataHolder> listOX;
         private List<CSVQuizMCDataHolder> listMC;
@@ -137,19 +137,24 @@
 
         private void InvalidateWithOXData()
         {
-            QuizChoiceData data = QuizChoiceData.GetOrCreate();
-            if (data.HasChoice(currentIndex))
+            try
             {
-                int existingAnswer = data.GetChoice(currentIndex);
-                oxGroup.outlineGroup[existingAnswer].SetVisibillity(true);
+                QuizChoiceData data = QuizChoiceData.GetOrCreate();
+                if (data.HasChoice(currentIndex))
+                {
+                    int existingAnswer = data.GetChoice(currentIndex);
+                    oxGroup.outlineGroup[existingAnswer].SetVisibillity(true);
+                }
+
+                ToggleOXorMCUI(true);
+
+                txt_question.text = listOX[currentIndex].question;
+                txt_explain.text = listOX[currentIndex].explain;
             }
-
-            ToggleOXorMCUI(true);
-
-            txt_question.text = listOX[currentIndex].question;
-            txt_explain.text = listOX[currentIndex].explain;
-
-            PlayOXVoice();
+            catch (System.Exception e)
+            {
+                Debug.Log($"{e.Message}\n{e.StackTrace}");
+            }
         }
 
         private void InvalidateWithMCData()
