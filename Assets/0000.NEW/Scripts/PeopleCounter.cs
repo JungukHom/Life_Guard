@@ -52,6 +52,8 @@ public class PeopleCounter : MonoBehaviour
                     fadeInOut.FadeOut(() =>
                     {
                         PlayerControl.isMoveable = true;
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
                         SceneLoader.LoadScene(SceneName._06_Quiz);
                     });
 

@@ -132,10 +132,13 @@
 
         private void EnableOutline(int index)
         {
-            Image target = isOX ? img_ox_array[index] : img_mc_array[index];
-            Color color = target.color;
-            color.a = 1;
-            target.color = color;
+            try
+            {
+                Image target = isOX ? img_ox_array[index] : img_mc_array[index];
+                Color color = target.color;
+                color.a = 1;
+                target.color = color;
+            } catch { }
         }
 
         private void DisableAllOutlines()

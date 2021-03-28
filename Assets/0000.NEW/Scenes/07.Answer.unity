@@ -331,7 +331,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -343,7 +343,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &36730734
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -995,7 +996,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1007,7 +1008,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &304623522
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1227,7 +1229,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1239,7 +1241,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &342079470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2142,7 +2145,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2154,7 +2157,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &501265633
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2297,7 +2301,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2309,7 +2313,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &507632257
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3194,7 +3199,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -3206,7 +3211,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &701663508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5059,7 +5065,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -5071,7 +5077,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &1125600618
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5851,7 +5858,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -5863,7 +5870,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &1381440886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6798,7 +6806,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -6810,7 +6818,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &1631709143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8103,7 +8112,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1bf6a2c7f4e7f0946ad1b0050ec15035, type: 3}
-    m_FontSize: 35
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -8115,7 +8124,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774
-    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4."
+    \uB4E4\uC5B4\uAC08 \uC790\uB9AC\uC785\uB2C8\uB2E4.\n\uC815\uB2F5\uC774 \uB4E4\uC5B4\uAC08
+    \uC790\uB9AC\uC785\uB2C8\uB2E4."
 --- !u!222 &1855926147
 CanvasRenderer:
   m_ObjectHideFlags: 0

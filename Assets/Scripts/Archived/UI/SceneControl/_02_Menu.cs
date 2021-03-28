@@ -115,7 +115,7 @@
             CSVLODataContainer container = CSVLODataContainer.GetOrCreateInstance();
             List<CSVLODataHolder> list = container.GetData(ELocation.Hotel, (EHotelLesson)selectedLessonIndex);
 
-            string title = selectedLessonIndex == 0 ? "심폐소생술" : "수상안전관리";
+            string title = selectedLessonIndex == 0 ? "수상구조" : "심폐소생술";
             txt_lesson.text = title; //"Lesson 0" + (selectedLessonIndex + 1);
             for (int i = 0; i < list.Count; i++)
             {
