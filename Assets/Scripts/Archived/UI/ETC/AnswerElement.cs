@@ -87,7 +87,7 @@
 
         private void ChangeOXImage(int playerAnswer, int correctAnswer)
         {
-            if (playerAnswer == correctAnswer)
+            if (playerAnswer == correctAnswer - 1)
             {
                 img_ox.sprite = sprite_o;
             }

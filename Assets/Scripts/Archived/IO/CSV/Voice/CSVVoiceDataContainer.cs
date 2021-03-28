@@ -22,7 +22,7 @@
         {
             List<Dictionary<string, object>> dataList = CSVReader.Read("Datas/db_voice");
 
-            Debug.Log($"key count : {dataList[0].Keys.Count}");
+            //Debug.Log($"key count : {dataList[0].Keys.Count}");
 
             string debug = "";
             try

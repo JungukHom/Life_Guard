@@ -23,7 +23,6 @@ public class PeopleCounter : MonoBehaviour
 
     public void AddCount()
     {
-        Debug.Log($"add count : {count}");
         count++;
         if (count >= 4)
         {

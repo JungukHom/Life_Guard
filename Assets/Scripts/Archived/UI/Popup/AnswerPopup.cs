@@ -127,7 +127,7 @@
             pnl_ox.gameObject.SetActive(false);
             pnl_mc.gameObject.SetActive(true);
 
-            EnableOutline(int.Parse(data.correctAnswer));
+            EnableOutline(int.Parse(data.correctAnswer) - 1);
         }
 
         private void EnableOutline(int index)
@@ -138,7 +138,10 @@
                 Color color = target.color;
                 color.a = 1;
                 target.color = color;
-            } catch { }
+            } catch (System.Exception e)
+            {
+                Debug.Log(e.Message + "\n" + e.StackTrace);
+            }
         }
 
         private void DisableAllOutlines()
