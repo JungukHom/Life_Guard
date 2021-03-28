@@ -17,6 +17,15 @@
 
         private bool isLanded = false;
 
+        Vector3 defaultPosition;
+        Quaternion defaultRotation;
+
+        private void Awake()
+        {
+            defaultPosition = transform.position;
+            defaultRotation = transform.rotation;
+        }
+
         private void Update()
         {
             if (isLanded)
@@ -27,11 +36,27 @@
             }
         }
 
+        public void ResetState()
+        {
+            transform.position = defaultPosition;
+            transform.rotation = defaultRotation;
+
+            isLanded = false;
+
+            Rigidbody rb = GetComponent<Rigidbody>();
+            Collider collider = GetComponent<Collider>();
+
+            rb.useGravity = true;
+            rb.isKinematic = false;
+            rb.velocity = Vector3.zero;
+
+            collider.isTrigger = false;
+        }
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("WaterLine"))
             {
-                Debug.Log("OnTriggerEnter" + other.gameObject.name);
                 isLanded = true;
 
                 this.transform.rotation = Quaternion.identity;

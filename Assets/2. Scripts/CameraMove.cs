@@ -19,13 +19,16 @@ public class CameraMove : MonoBehaviour
 
     void Update()
     {
-        yaw += rotSpeed * Input.GetAxis("Mouse X");
-        pitch -= rotSpeed * Input.GetAxis("Mouse Y");
+        if (PlayerControl.isMoveable)
+        {
+            yaw += rotSpeed * Input.GetAxis("Mouse X");
+            pitch -= rotSpeed * Input.GetAxis("Mouse Y");
 
-        Vector3 position = playerTr.position;
-        position.y = position.y + 0.8f;
+            Vector3 position = playerTr.position;
+            position.y = position.y + 0.8f;
 
-        cameraTr.eulerAngles = new Vector3(pitch, yaw, 0f);
-        transform.position = position;
+            cameraTr.eulerAngles = new Vector3(pitch, yaw, 0f);
+            transform.position = position;
+        }        
     }
 }

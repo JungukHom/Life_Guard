@@ -32,13 +32,17 @@ public class PCPlayerController : MonoBehaviour
 
     void Update()
     {
-        moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        tr.rotation = Quaternion.Euler(0f , cameraTr.eulerAngles.y, 0f);
-        tr.Translate(moveDir * Time.deltaTime * speed, Space.Self);
-        //rigidbody.velocity = Vector3.zero; // TODO change velocity
+        if (PlayerControl.isMoveable)
+        {
+            moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); // normalized
+            tr.rotation = Quaternion.Euler(0f, cameraTr.eulerAngles.y, 0f);
+            tr.Translate(moveDir * Time.deltaTime * speed, Space.Self);
+            //rigidbody.velocity = Vector3.zero; // TODO change velocity
+        }
     }
 
-   
+
+    public EventController_Rescue controllerRescue;
     IEnumerator MouseDown()
     {
         while (true)
@@ -63,6 +67,10 @@ public class PCPlayerController : MonoBehaviour
                         colliderTr.parent = cameraTr.transform;
 
                         SetCollRigid();
+                    }
+                    else if (hit.collider.gameObject.name.Equals("RescueReset"))
+                    {
+                        controllerRescue.ResetObjectPositions();
                     }
                     else if (hit.collider.tag.Equals("EventObject"))
                     {
