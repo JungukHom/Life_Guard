@@ -21,13 +21,11 @@ public class PCPlayerController : MonoBehaviour
     public float force = 15f;
     public Vector3 grabPosition = new Vector3(-0.35f, 0.5f, 0.4f);
 
-    GameController gameController;
     void Start()
     {
         tr = GetComponent<Transform>();
         cameraTr = Camera.main.transform;
         rigidbody = GetComponent<Rigidbody>();
-        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
 
         StartCoroutine(MouseDown());
     }
@@ -69,8 +67,6 @@ public class PCPlayerController : MonoBehaviour
                     else if (hit.collider.tag.Equals("EventObject"))
                     {
                         Destroy(hit.collider.gameObject);
-                        gameController.AddDialogIndex();
-                        gameController.Action();
                     }
                 }
             }
@@ -83,8 +79,6 @@ public class PCPlayerController : MonoBehaviour
                     if (hit.collider.tag.Equals("Point"))
                     {
                         collOb.transform.position = hit.collider.transform.position;
-                        gameController.AddDialogIndex();
-                        gameController.Action();
                     }
                     else
                     {
@@ -105,7 +99,7 @@ public class PCPlayerController : MonoBehaviour
                 SetCollRigid();
                 collOb.transform.parent = null;
                 Vector3 throwVector = cameraTr.up + cameraTr.forward * force;
-                throwVector.y = throwVector.y * 1.25f;
+                throwVector.y = throwVector.y * 0.025f;
                 collRig.AddForce(throwVector, ForceMode.Impulse);
                 ResetCollOb();
             }
