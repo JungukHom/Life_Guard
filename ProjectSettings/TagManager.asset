@@ -8,6 +8,7 @@ TagManager:
   - WaterLine
   - Interactable
   - EventArea
+  - VRButton
   layers:
   - Default
   - TransparentFX
